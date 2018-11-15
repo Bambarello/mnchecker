@@ -50,9 +50,9 @@ userDirName = ".mnchecker"
 #==========================================================
 # Currency defaults
 defaultCurrencyHandle = "moondex"
-defaultCliBin = os.path.join(os.path.abspath(os.path.expanduser("~")), "moondex/moondex-cli")
-defaultDaemonBin = os.path.join(os.path.abspath(os.path.expanduser("~")), "moondex/moondexd")
-defaultDataDir = os.path.join(os.path.abspath(os.path.expanduser("~")), ".moondexcore")
+defaultCliBin = os.path.join(os.path.abspath(os.path.expanduser("~")), "/root/binarium/binarium-cli")
+defaultDaemonBin = os.path.join(os.path.abspath(os.path.expanduser("~")), "/root/binarium/binariumd")
+defaultDataDir = os.path.join(os.path.abspath(os.path.expanduser("~")), ".binariumcore")
 
 #==========================================================
 # Explorer URL
@@ -60,7 +60,7 @@ defaultDataDir = os.path.join(os.path.abspath(os.path.expanduser("~")), ".moonde
 #=============================
 # chainz.cryptoid.info
 # NOTE: For this explorer, you'll have to set the user agent to "Mozilla/5.0" further below.
-defaultBlockExplorerBlockCountUrlTemplate = "http://explorer.moondexcoin.org/api/getblockcount"
+defaultBlockExplorerBlockCountUrlTemplate = "https://binarium.money/api/v1/cc_api/getblockchaininfo/params/blocks"
 
 #=============================
 # moondex.explorerz.top:3003
