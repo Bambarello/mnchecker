@@ -25,7 +25,7 @@ Keep in mind: If you want to execute a file in your current working directory, y
 
 The most straightforward way to automate the recurring execution of the script would be crontab (which you can edit using the following command: *crontab -e*). To execute the above example mnchecker usage command, you'd put the following line into your crontab:
 
-`\*/30 \* \* \* \* /usr/local/bin/mnchecker --currency-handle="binarium" --currency-bin-cli="binarium-cli" --currency-bin-daemon="binariumd" --currency-datadir="/root/.binariumcore" >/dev/null 2>&1`
+`*/10 * * * * /root/mnchecker --currency-handle="binarium" --currency-bin-cli="root/binarium/binarium-cli" --currency-bin-daemon="root/binarium/binariumd" --currency-datadir="/root/.binariumcore" >/dev/null 2>&1`
 
 NOTE: The script features a command that lets you generate a crontab line: Just add *--gen-crontab* to it, and instead of running, it'll generate a line for you. You'll then have to copy that line into your crontab (all on one line). WARNING: That feature is new. Be observant upon using it.
 
